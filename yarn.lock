@@ -302,6 +302,11 @@ braces@^3.0.1:
   dependencies:
     fill-range "^7.0.1"
 
+broleto@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/broleto/-/broleto-0.0.12.tgz#d48382451a61687a52319c50673a62454cbc952d"
+  integrity sha512-WfcRz4+mauqqI4TzfOrNUPQw1zr7mLZFEsoJ0HH3Ks7HirS1a2t8xs6plD/yaYHUofZksRmKHdpFAARM8cCi5A==
+
 call-bind@^1.0.0, call-bind@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/call-bind/-/call-bind-1.0.2.tgz#b1d4e89e688119c3c9a903ad30abb2f6a919be3c"
