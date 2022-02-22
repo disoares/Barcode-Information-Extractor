@@ -21,3 +21,5 @@ de vencimento e o cálculo de juros fica para a conta do mês seguinte.
 #### Sem nome de banco
 
 ![](https://barcode-information-extractor.vercel.app/retorno2.png)
+
+Obs.: O retorno dessas contas vem com o type "ARRECADACAO".
