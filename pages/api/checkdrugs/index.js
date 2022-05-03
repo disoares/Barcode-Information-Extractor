@@ -1,7 +1,7 @@
 export default function CheckDrugs(req, res) {
 
     if (req.method !== 'POST') {
-        res.status(405).send({ error: 'Houve um erro de método.' });
+        res.status(405).json({ error: 'Houve um erro de método.' });
         return;
     }
 
@@ -16,14 +16,14 @@ export default function CheckDrugs(req, res) {
                 return response.json();
             })
             .then((response) => {
-                res.status(200).send(response.fullInteractionTypeGroup);
+                res.status(200).json(response.fullInteractionTypeGroup);
             })
 
         } else {
-            res.status(405).send({ error: 'Passe dois ou mais medicamentos para a checagem.' });
+            res.status(405).json({ error: 'Passe dois ou mais medicamentos para a checagem.' });
         }
     } else {
-        res.status(405).send({ error: 'Passe dois ou mais medicamentos para a checagem.' });
+        res.status(405).json({ error: 'Passe dois ou mais medicamentos para a checagem.' });
     }
 
 }
