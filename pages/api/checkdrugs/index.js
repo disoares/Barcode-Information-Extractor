@@ -7,10 +7,10 @@ export default function CheckDrugs(req, res) {
 
     const drugs = req.body.drugs;
     if (drugs) {
-        if (drugs.length > 1) {
+        if (drugs.split(';').length > 2) {
 
-            //const base_url = `https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=${drugs.replaceAll(';', '+')}`;
-            res.status(200).send(drugs);
+            let base_url = `https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=${drugs.replaceAll(';', '+')}`;
+            res.status(200).send(base_url);
 
             /*fetch(base_url)
             .then((response) => {
