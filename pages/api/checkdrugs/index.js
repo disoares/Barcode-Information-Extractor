@@ -9,8 +9,10 @@ export default function CheckDrugs(req, res) {
     if (drugs) {
         if (drugs.split(';').length > 2) {
 
-            let base_url = `https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=${drugs.replaceAll(';', '+')}`;
-            res.status(200).send(base_url);
+            const replacedDrugs = drugs.replaceAll(';', '+');
+
+            let base_url = 'https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=' + replacedDrugs;
+            res.status(200).send(base_url + ' e ' + replacedDrugs);
 
             /*fetch(base_url)
             .then((response) => {
@@ -25,6 +27,6 @@ export default function CheckDrugs(req, res) {
         }
     } else {
         res.status(405).json({ error: 'Passe dois ou mais medicamentos para a checagem.' });
-    }    
+    }
 
 }
