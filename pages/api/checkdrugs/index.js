@@ -21,10 +21,10 @@ export default function CheckDrugs(req, res) {
                 });
 
         } else {
-            res.status(405).json({ error: 'Passe dois ou mais medicamentos para a checagem. TESTE: ' + drugs });
+            res.status(405).json({ error: 'Passe dois ou mais medicamentos para a checagem.' });
         }
     } else {
-        res.status(405).json({ error: 'Passe dois ou mais medicamentos para a checagem. TESTE: ' + drugs });
+        res.status(405).json({ error: 'Passe dois ou mais medicamentos para a checagem.' });
     }
 
 }
