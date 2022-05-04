@@ -11,15 +11,14 @@ export default function CheckDrugs(req, res) {
 
 
             const base_url = `https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=${drugs.split(';').join('+')}`;
-            res.status(200).send(base_url);
 
-            /*fetch(base_url)
-            .then((response) => {
-                return response.json();
-            })
-            .then((response) => {
-                res.status(200).json(response.fullInteractionTypeGroup);
-            });*/
+            fetch(base_url)
+                .then((response) => {
+                    return response.json();
+                })
+                .then((response) => {
+                    res.status(200).json(response.fullInteractionTypeGroup);
+                });
 
         } else {
             res.status(405).json({ error: 'Passe dois ou mais medicamentos para a checagem.' });
