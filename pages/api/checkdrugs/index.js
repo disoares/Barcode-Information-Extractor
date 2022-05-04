@@ -11,8 +11,8 @@ export default function CheckDrugs(req, res) {
 
             const replacedDrugs = drugs.replaceAll(';', '+');
 
-            let base_url = 'https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=' + replacedDrugs;
-            res.status(200).send(base_url + ' e ' + replacedDrugs);
+            //let base_url = 'https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=' + replacedDrugs;
+            res.status(200).send(replacedDrugs);
 
             /*fetch(base_url)
             .then((response) => {
