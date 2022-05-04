@@ -9,8 +9,8 @@ export default function CheckDrugs(req, res) {
     if (drugs) {
         if (drugs.length > 1) {
 
-            const base_url = `https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=${drugs.replaceAll(';', '+')}`;
-            res.status(200).send(base_url);
+            //const base_url = `https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=${drugs.replaceAll(';', '+')}`;
+            res.status(200).send(drugs);
 
             /*fetch(base_url)
             .then((response) => {
