@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mrmgomes/boleto-utils": "^1.2.0",
     "@vitalets/google-translate-api": "^8.0.0",
     "broleto": "^0.0.12",
     "next": "12.1.0",

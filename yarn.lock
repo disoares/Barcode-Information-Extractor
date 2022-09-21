@@ -46,6 +46,13 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@mrmgomes/boleto-utils@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@mrmgomes/boleto-utils/-/boleto-utils-1.2.0.tgz#353b8ebdaa9dc447695966646991c91bc32af5ce"
+  integrity sha512-rbz5owFJQg/mftGJEiWUReEoJRZRpyvSmM62ooO1Nu8y4065sLMEwhqW8SHzB4YXXRC83WNiM3fN/S6vlae4aw==
+  dependencies:
+    moment-timezone "^0.5.31"
+
 "@next/env@12.1.0":
   version "12.1.0"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.0.tgz#73713399399b34aa5a01771fb73272b55b22c314"
@@ -1284,6 +1291,18 @@ minimist@^1.2.0:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+
+moment-timezone@^0.5.31:
+  version "0.5.37"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.37.tgz#adf97f719c4e458fdb12e2b4e87b8bec9f4eef1e"
+  integrity sha512-uEDzDNFhfaywRl+vwXxffjjq1q0Vzr+fcQpQ1bU0kbzorfS7zVtZnCnGc8mhWmF39d4g4YriF6kwA75mJKE/Zg==
+  dependencies:
+    moment ">= 2.9.0"
+
+"moment@>= 2.9.0":
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 ms@2.0.0:
   version "2.0.0"
