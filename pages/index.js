@@ -5,6 +5,6 @@ export default function Home() {
     });
 
   return (
-    <p>{Date.now()}</p>
+    <p>Teste</p>
   )
 }
