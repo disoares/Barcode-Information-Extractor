@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <p>{Date.now}</p>
+    <p>{Date.now()}</p>
   )
 }
